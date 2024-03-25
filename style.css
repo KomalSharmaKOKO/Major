@@ -1,0 +1,103 @@
+.container {
+    border: 2px solid #d88181;
+    background-color: #e0bfdc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #4bdddd;
+    color: #946767;
+  }
+
+  
+  
+  
+  /* Clear floats after containers */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  .container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 10%;
+  }
+  
+  /* Increase the font-size of a span element */
+  .container span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  @media (max-width: 500px) {
+    .container {
+      text-align: center;
+      background-color: #105469;
+    }
+  
+    .container img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.about-us{
+  /* height: 100vh; */
+  /* width: 100%; */
+  padding: 90px 0;
+  
+  background: #c5b1c2;
+}
+
+.pic{
+  height: auto;
+  /* width:  302px; */
+}
+.about{
+  width: 1130px;
+  font-size: large;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  background-color: rgb(187, 138, 161);
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: aquamarine;
+}
+.bg-dark {
+  background-color: #105469 !important;
+}
+
+.nav-item:hover {
+  color: #E2B842 !important;
+}
+
+h1 {
+  color: #105469;
+  font-weight: 700;
+}
+
+footer, footer .container .col{
+  height: 200px;
+}
